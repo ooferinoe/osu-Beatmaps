@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozu", "osu!\ozu.csproj", "{7F99A894-B641-4609-8333-90B67A7098C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuUI", "osu!\ozuUI.csproj", "{7F99A894-B641-4609-8333-90B67A7098C9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuBL", "osu!BL\ozuBL.csproj", "{D5B18AA8-2749-48B6-AC13-48B21BF86C24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuDL", "ozuDL\ozuDL.csproj", "{8D903D2C-B711-48E9-B2F5-50D6141875F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuModel", "ozuModel\ozuModel.csproj", "{6C31D081-C5D5-4B78-BA61-48802BEAC029}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{D5B18AA8-2749-48B6-AC13-48B21BF86C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B18AA8-2749-48B6-AC13-48B21BF86C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B18AA8-2749-48B6-AC13-48B21BF86C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D903D2C-B711-48E9-B2F5-50D6141875F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D903D2C-B711-48E9-B2F5-50D6141875F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D903D2C-B711-48E9-B2F5-50D6141875F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D903D2C-B711-48E9-B2F5-50D6141875F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C31D081-C5D5-4B78-BA61-48802BEAC029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C31D081-C5D5-4B78-BA61-48802BEAC029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C31D081-C5D5-4B78-BA61-48802BEAC029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C31D081-C5D5-4B78-BA61-48802BEAC029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

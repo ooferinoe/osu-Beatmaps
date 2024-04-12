@@ -1,4 +1,5 @@
 ﻿using osu_BL;
+using ozuDL;
 
 namespace osu_
 {
@@ -7,91 +8,99 @@ namespace osu_
 
         public static void Main(string[] args)
         {
-            
+            Console.Write("Enter Username: ");
+            string userName = Console.ReadLine();
 
-            Console.WriteLine("Welcome to the Beatmap selection!");
-            while (true)
+            Verify userData = new Verify();
+            bool result = userData.VerifyUser(userName);
+
+            if (result)
             {
-
-                Console.WriteLine();
-                Console.WriteLine("Below is a list of Beatmaps:");
-                Console.WriteLine("1. FREEDOM DiVE");
-                Console.WriteLine("2. Everything will freeze");
-                Console.WriteLine("3. Arkadia");
-                Console.WriteLine("4. ReI");
-                Console.WriteLine("5. Guinea Pig Bridge");
-                Console.WriteLine("6. Glory Days");
-                Console.WriteLine("7. Disorder");
-                Console.WriteLine();
-                Console.Write("Please select a Beatmap: ");
-
-                string choices = Console.ReadLine();
-
-                switch (choices)
+                Console.WriteLine("Welcome to the Beatmap selection!");
+                while (true)
                 {
-                    case "1":
-                        {
-                            Console.WriteLine("------------------------------");
-                            FDive.Rainbow();
-                            break;
-                        }
 
-                    case "2":
-                        {
-                            Console.WriteLine("------------------------------");
-                            EWF.Ekoro();
-                            break;
-                        }
+                    Console.WriteLine();
+                    Console.WriteLine("Below is a list of Beatmaps:");
+                    Console.WriteLine("1. FREEDOM DiVE");
+                    Console.WriteLine("2. Everything will freeze");
+                    Console.WriteLine("3. Arkadia");
+                    Console.WriteLine("4. ReI");
+                    Console.WriteLine("5. Guinea Pig Bridge");
+                    Console.WriteLine("6. Glory Days");
+                    Console.WriteLine("7. Disorder");
+                    Console.WriteLine();
+                    Console.Write("Please select a Beatmap: ");
 
-                    case "3":
-                        {
-                            Console.WriteLine("------------------------------");
-                            Ark.BabyMetal();
-                            break;
-                        }
+                    string choices = Console.ReadLine();
 
-                    case "4":
-                        {
-                            Console.WriteLine("------------------------------");
-                            Rei.Cig();
-                            break;
-                        }
+                    switch (choices)
+                    {
+                        case "1":
+                            {
+                                Console.WriteLine("------------------------------");
+                                FDive.Rainbow();
+                                break;
+                            }
 
-                    case "5":
-                        {
-                            Console.WriteLine("------------------------------");
-                            GPig.Bridge();
-                            break;
-                        }
+                        case "2":
+                            {
+                                Console.WriteLine("------------------------------");
+                                EWF.Ekoro();
+                                break;
+                            }
 
-                    case "6":
-                        {
-                            Console.WriteLine("------------------------------");
-                            Days.Stamina();
-                            break;
-                        }
+                        case "3":
+                            {
+                                Console.WriteLine("------------------------------");
+                                Ark.BabyMetal();
+                                break;
+                            }
 
-                    case "7":
-                        {
-                            Console.WriteLine("------------------------------");
-                            Disnuts.Speed();
-                            break;
-                        }
+                        case "4":
+                            {
+                                Console.WriteLine("------------------------------");
+                                Rei.Cig();
+                                break;
+                            }
 
-                    default:
-                        {
-                            Console.WriteLine();
-                            Console.WriteLine("Invalid choice!");
-                            Console.WriteLine("------------------------------");
-                            break;
-                            return;
-                        }
+                        case "5":
+                            {
+                                Console.WriteLine("------------------------------");
+                                GPig.Bridge();
+                                break;
+                            }
+
+                        case "6":
+                            {
+                                Console.WriteLine("------------------------------");
+                                Days.Stamina();
+                                break;
+                            }
+
+                        case "7":
+                            {
+                                Console.WriteLine("------------------------------");
+                                Disnuts.Speed();
+                                break;
+                            }
+
+                        default:
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("Invalid choice!");
+                                Console.WriteLine("------------------------------");
+                                break;
+                                return;
+                            }
+                    }
                 }
-
-
-
-
             }
+
+            else
+            {
+                Console.WriteLine("User not found.");
+            }       
         }
     }
 }
