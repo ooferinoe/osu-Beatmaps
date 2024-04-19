@@ -11,5 +11,17 @@ namespace osu_BL
 
             return result.userName != null ? true : false;
         }
+
+        public List<BeatMap> maplist = new List<BeatMap>();
+        public List<BeatMap> GetBeatMaps()
+        {
+            SongMap songMap = new SongMap();
+            return songMap.GetBeatMaps();
+        }
+
+        public void addSong(BeatMap song)
+        {
+            maplist.Add(song);
+        }
     }
 }
