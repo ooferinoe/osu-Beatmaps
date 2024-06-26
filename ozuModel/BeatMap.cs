@@ -1,4 +1,4 @@
-﻿namespace osu_BL
+﻿namespace ozuModel
 {
     public class BeatMap
     {
