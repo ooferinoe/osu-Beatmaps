@@ -7,13 +7,13 @@ namespace ozuDL
     {
 
         string connectionString
-        = "Data Source =DESKTOP-7NDQCQL\\SQLEXPRESS; Initial Catalog = osu!; Integrated Security = True;";
+        = "Data Source =DESKTOP-S4INGIN; Initial Catalog = osu!; Integrated Security = True;";
 
         SqlConnection sqlConnection;
 
         public SqlDbData()
         {
-            sqlConnection = new SqlConnection(connectionString);    
+            sqlConnection = new SqlConnection(connectionString);
         }
 
         public List<BeatMap> GetBeatMaps()
@@ -48,7 +48,7 @@ namespace ozuDL
         {
             int success;
 
-            string insertStatement = "INSERT INTO users VALUES (@title, @artist)";
+            string insertStatement = "INSERT INTO song VALUES (@title, @artist)";
 
             SqlCommand insertCommand = new SqlCommand(insertStatement, sqlConnection);
 

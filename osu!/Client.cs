@@ -16,6 +16,7 @@ namespace Client
             {
                 Console.WriteLine(item.title);
                 Console.WriteLine(item.artist);
+                Console.WriteLine();
             }
 
         }
