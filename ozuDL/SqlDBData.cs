@@ -7,7 +7,8 @@ namespace ozuDL
     {
 
         string connectionString
-        = "Data Source =DESKTOP-7NDQCQL; Initial Catalog = osu!; Integrated Security = True;";
+            = "Server = tcp:20.2.38.141,1433; Database = osu!; User Id = sa; Password = integ2!";
+        // = "Data Source =DESKTOP-7NDQCQL; Initial Catalog = osu!; Integrated Security = True;";
 
         SqlConnection sqlConnection;
 
