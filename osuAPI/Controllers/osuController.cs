@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc;
 using osu_BL;
 
 namespace osuAPI.Controllers
@@ -42,6 +42,21 @@ namespace osuAPI.Controllers
         public JsonResult UpdateSong(BeatMap request)
         {
             var result = transactionServices.UpdateSongMap(request.title, request.artist);
+
+            return new JsonResult(result);
+        }
+
+        [HttpDelete]
+        public JsonResult DeleteSong(osuAPI.BeatMap request)    
+        {
+
+            var delete = new ozuModel.BeatMap
+            {
+                title = request.title
+
+            };
+
+            var result = transactionServices.DeleteSongMap(delete);
 
             return new JsonResult(result);
         }

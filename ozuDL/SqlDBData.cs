@@ -7,7 +7,7 @@ namespace ozuDL
     {
 
         string connectionString
-        = "Data Source =DESKTOP-S4INGIN; Initial Catalog = osu!; Integrated Security = True;";
+        = "Data Source =DESKTOP-7NDQCQL; Initial Catalog = osu!; Integrated Security = True;";
 
         SqlConnection sqlConnection;
 
