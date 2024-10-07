@@ -18,6 +18,7 @@ namespace ozuMail
 
                 <h1>Congratulations, Atomoz!</h1> <br>
                 <br>
+                <p>
                 The beatmap that you have submitted on March 12, 2024 has been recently ranked! <br>
                 <br>
                 We hope to receive more amazing beatmaps from you in the future! <br>
