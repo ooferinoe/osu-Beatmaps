@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuDL", "ozuDL\ozuDL.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ozuModel", "ozuModel\ozuModel.csproj", "{6C31D081-C5D5-4B78-BA61-48802BEAC029}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osuAPI", "osuAPI\osuAPI.csproj", "{26C279B6-42AE-459F-AD19-F62868A85146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "osuAPI", "osuAPI\osuAPI.csproj", "{26C279B6-42AE-459F-AD19-F62868A85146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ozuMail", "ozuMail\ozuMail.csproj", "{59767F2F-E149-4C40-8D2C-750347F0D9FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{26C279B6-42AE-459F-AD19-F62868A85146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C279B6-42AE-459F-AD19-F62868A85146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C279B6-42AE-459F-AD19-F62868A85146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59767F2F-E149-4C40-8D2C-750347F0D9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59767F2F-E149-4C40-8D2C-750347F0D9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59767F2F-E149-4C40-8D2C-750347F0D9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59767F2F-E149-4C40-8D2C-750347F0D9FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
