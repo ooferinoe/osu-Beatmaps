@@ -10,17 +10,24 @@ namespace ozuMail
             var message = new MimeMessage();
             message.From.Add(new MailboxAddress("osu!", "osu@ppy.sh"));
             message.To.Add(new MailboxAddress("Atomoz", "sample.email@gmail.com"));
-            message.Subject = "Your Beatmap has been Ranked";
+            message.Subject = "osu! account verification";
 
             message.Body = new TextPart("html")
             {
-                Text = """
-
-                <h1>Congratulations, Atomoz!</h1> <br>
+                Text =
+                """
+                <p>Hi Atomoz, <br>
                 <br>
-                The beatmap that you have submitted on March 12, 2024 has been recently ranked! <br>
+                An action performed on your account from Philippines requires verification. <br>
                 <br>
-                We hope to receive more amazing beatmaps from you in the future! <br>
+                Your verification code is: ce62bc73 <br>
+                You can enter the code with or without spaces. <br>
+                <br>
+                Alternatively, you can also visit this link below to finish verification: <br>
+                <br>
+                https://osu.ppy.sh/home/account/verify?key=b627fc44ef91874472c821fc7eab577fdd9d9d7d7dd539938febd50cd0d59900 <br>
+                <br>
+                If you did not request this, please REPLY IMMEDIATELY as your account may be in danger. <br>
                 <br>
                 -- <br>
                 osu! | https://osu.ppy.sh
@@ -37,7 +44,7 @@ namespace ozuMail
                     client.Authenticate("93919a8286e246", "36d61ec08d9dcd");
 
                     client.Send(message);
-                    Console.WriteLine("An email about beatmap ranking has been sent successfully through Mailtrap.");
+                    Console.WriteLine("An email about account verification has been sent successfully through Mailtrap.");
                 }
                 catch (Exception ex)
                 {
