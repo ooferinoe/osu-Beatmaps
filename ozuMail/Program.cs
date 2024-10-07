@@ -24,7 +24,8 @@ namespace ozuMail
                 We hope to receive more amazing beatmaps from you in the future! <br>
                 <br>
                 -- <br>
-                osu! | https://osu.ppy.sh
+                osu! | <a href="https://osu.ppy.sh">
+                https://osu.ppy.sh</a>
                 </p>
                 """
             };

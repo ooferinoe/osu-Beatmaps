@@ -25,12 +25,14 @@ namespace ozuMail
                 <br>
                 Alternatively, you can also visit this link below to finish verification: <br>
                 <br>
-                https://osu.ppy.sh/home/account/verify?key=b627fc44ef91874472c821fc7eab577fdd9d9d7d7dd539938febd50cd0d59900 <br>
+                <a href="https://osu.ppy.sh/home/account/verify?key=b627fc44ef91874472c821fc7eab577fdd9d9d7d7dd539938febd50cd0d59900">
+                https://osu.ppy.sh/home/account/verify?key=b627fc44ef91874472c821fc7eab577fdd9d9d7d7dd539938febd50cd0d59900<a/> <br>
                 <br>
                 If you did not request this, please REPLY IMMEDIATELY as your account may be in danger. <br>
                 <br>
                 -- <br>
-                osu! | https://osu.ppy.sh
+                osu! | <a href="https://osu.ppy.sh">
+                https://osu.ppy.sh</a>
                 </p>
                 """
             };
