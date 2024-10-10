@@ -1,4 +1,4 @@
-﻿    using ozuDL;
+﻿using ozuDL;
 using ozuModel;
 
 namespace osu_BL
@@ -8,6 +8,12 @@ namespace osu_BL
         BeatMapValidationServices validationServices = new BeatMapValidationServices();
         SongData songData = new SongData();
 
+        public List<BeatMap> GetBeatMap()
+        {
+            List<BeatMap> beats = songData.GetBeatMaps();
+            return beats;
+        }
+        
         public bool CreateBeatMap(BeatMap song)
         {
             bool result = false;
